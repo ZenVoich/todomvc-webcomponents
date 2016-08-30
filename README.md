@@ -12,3 +12,6 @@ npm run build
 ```
 
 Open `dist.html` in your browser.
+
+## Supported browsers
+Latest Chrome with enabled *experimental Web Platform features* flag (chrome://flags/#enable-experimental-web-platform-features)
