@@ -8,4 +8,5 @@ cd todomvc-webcomponents
 npm install
 npm run build
 ```
-Open `dist.html` on your browser.
+
+Open `dist.html` in your browser.
