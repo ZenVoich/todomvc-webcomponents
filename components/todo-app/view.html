@@ -1,0 +1,34 @@
+<template id="todo-app">
+	<link rel="stylesheet" href="style.css">
+
+	<div id="active" hidden></div>
+	<div id="completed" hidden></div>
+	<section class="todoapp" id="active completed">
+		<header class="header">
+			<h1>todos</h1>
+			<input class="new-todo" placeholder="What needs to be done?" autofocus>
+		</header>
+		<section class="main">
+			<input class="toggle-all" type="checkbox">
+			<label for="toggle-all">Mark all as complete</label>
+			<ul class="todo-list">
+				<slot></slot>
+			</ul>
+		</section>
+		<footer class="footer">
+			<span class="todo-count"><strong class="number">0</strong> <span class="what">items</span> left</span>
+			<ul class="filters">
+				<li>
+					<a class="all" href="#all">All</a>
+				</li>
+				<li>
+					<a class="active" href="#active">Active</a>
+				</li>
+				<li>
+					<a class="completed" href="#completed">Completed</a>
+				</li>
+			</ul>
+			<button class="clear-completed">Clear completed</button>
+		</footer>
+	</section>
+</template>

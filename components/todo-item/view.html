@@ -1,0 +1,14 @@
+<template id="todo-item">
+	<link rel="stylesheet" href="style.css">
+
+	<li>
+		<div class="view">
+			<input class="toggle" type="checkbox">
+			<label>
+				<slot></slot>
+			</label>
+			<button class="destroy"></button>
+		</div>
+		<input class="edit">
+	</li>
+</template>
